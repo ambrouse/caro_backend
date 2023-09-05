@@ -24,4 +24,4 @@ io.on("connection",(socket)=>{
     })
 })
 
-sever.listen("6969",()=>{console.log("loading_sever...")})
+sever.listen("https://caro-backend-v2.vercel.app",()=>{console.log("loading_sever...")})
