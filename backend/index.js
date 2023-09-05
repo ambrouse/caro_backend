@@ -14,7 +14,9 @@ const io = new Server(sever,{
         methods:["GET","POST"],
     }
 })
-
+app.get('/',(re,res)=>{
+    return res.json("back end")
+})
 io.on("connection",(socket)=>{
     socket.on("clienttosever",(data)=>{
         socket.broadcast.emit("severtoclient",data)
